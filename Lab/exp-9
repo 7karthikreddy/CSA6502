@@ -1,0 +1,35 @@
+zero_shot = """
+Create a promotional social media post for an AI Workshop.
+Mention hands-on learning, practical AI applications, date,
+venue, registration, and suitable hashtags.
+"""
+
+one_shot = """
+Example:
+Join our Python Workshop!
+Learn Python through hands-on activities and real-world examples.
+Register now!
+#Python #Workshop
+
+Now create a promotional social media post for an AI Workshop.
+"""
+
+few_shot = """
+Example 1:
+Join our Data Science Workshop!
+Learn data analysis through practical activities.
+#DataScience #Workshop
+
+Example 2:
+Explore Robotics!
+Get hands-on experience with modern robotics.
+#Robotics #Innovation
+
+Now create a promotional social media post for an AI Workshop.
+Include hands-on learning, practical applications, registration,
+date, venue, call to action, and hashtags.
+"""
+
+print("ZERO-SHOT:\n", generate(zero_shot))
+print("\nONE-SHOT:\n", generate(one_shot))
+print("\nFEW-SHOT:\n", generate(few_shot))
