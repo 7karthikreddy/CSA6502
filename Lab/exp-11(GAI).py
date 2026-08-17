@@ -1,0 +1,20 @@
+print("LAB 11: PROMPT STRATEGY DESIGN")
+print("=" * 40)
+
+print("\nZERO-SHOT PROMPT")
+print("Prompt: Explain Artificial Intelligence.")
+print("Output: Artificial Intelligence is a technology that enables")
+print("computers to perform tasks that normally require human intelligence.")
+
+print("\nONE-SHOT PROMPT")
+print("Example: Python is a programming language.")
+print("Prompt: What is Artificial Intelligence?")
+print("Output: Artificial Intelligence enables computers to perform")
+print("intelligent tasks such as learning and problem solving.")
+
+print("\nFEW-SHOT PROMPT")
+print("Example 1: Python -> Programming language")
+print("Example 2: Java -> Programming language")
+print("Prompt: Artificial Intelligence -> ?")
+print("Output: Artificial Intelligence -> Technology that enables")
+print("machines to perform tasks requiring human intelligence.")
