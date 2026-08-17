@@ -1,0 +1,41 @@
+article = """
+Artificial Intelligence is transforming healthcare by helping doctors
+detect diseases earlier, analyze medical images, monitor patients,
+and develop new medicines. AI systems can process large amounts of
+medical data quickly and identify patterns that humans may miss.
+However, privacy, security, bias, and ethical concerns must be addressed.
+"""
+
+zero_shot = f"""
+Summarize the following article in exactly 50 words:
+
+{article}
+"""
+
+one_shot = f"""
+Example:
+Article: AI analyzes large datasets and discovers useful patterns.
+Summary: AI processes large datasets to identify important patterns.
+
+Now summarize this article in exactly 50 words:
+
+{article}
+"""
+
+few_shot = f"""
+Example 1:
+Article: AI helps doctors analyze medical information.
+Summary: AI assists doctors in analyzing medical information.
+
+Example 2:
+Article: AI can improve healthcare but creates privacy concerns.
+Summary: AI improves healthcare while creating privacy challenges.
+
+Now summarize this article in exactly 50 words:
+
+{article}
+"""
+
+print("ZERO-SHOT:\n", generate(zero_shot))
+print("\nONE-SHOT:\n", generate(one_shot))
+print("\nFEW-SHOT:\n", generate(few_shot))
