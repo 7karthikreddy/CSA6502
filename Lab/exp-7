@@ -1,0 +1,33 @@
+zero_shot = """
+Write a 200-word blog on "Applications of Artificial Intelligence
+in Healthcare". Discuss disease diagnosis, medical imaging,
+drug discovery, patient monitoring, and personalized treatment.
+"""
+
+one_shot = """
+Example:
+Topic: AI in Education
+Blog: AI improves education through personalized learning,
+automated assessment, and intelligent tutoring.
+
+Now write a 200-word blog on "Applications of Artificial
+Intelligence in Healthcare".
+"""
+
+few_shot = """
+Example 1:
+Topic: AI in Banking
+Blog: AI helps banks detect fraud and provide personalized services.
+
+Example 2:
+Topic: AI in Transportation
+Blog: AI improves transportation through traffic prediction
+and route optimization.
+
+Now write a 200-word blog on "Applications of Artificial
+Intelligence in Healthcare".
+"""
+
+print("ZERO-SHOT:\n", generate(zero_shot))
+print("\nONE-SHOT:\n", generate(one_shot))
+print("\nFEW-SHOT:\n", generate(few_shot))
