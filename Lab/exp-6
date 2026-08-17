@@ -1,0 +1,35 @@
+zero_shot = """
+Generate a product description for a Smart Fitness Watch.
+Mention fitness tracking, heart-rate monitoring, sleep tracking,
+GPS, step counting, calorie tracking, and battery life.
+"""
+
+one_shot = """
+Example:
+Product: Smart Earbuds
+Description: Wireless earbuds with clear sound, noise cancellation,
+comfortable design, and long battery life.
+
+Now generate a product description for a Smart Fitness Watch.
+Mention fitness tracking, heart-rate monitoring, sleep tracking,
+GPS, step counting, calorie tracking, and battery life.
+"""
+
+few_shot = """
+Example 1:
+Product: Smart Band
+Description: Track steps, heart rate, sleep, and workouts with
+a lightweight design.
+
+Example 2:
+Product: Smart Speaker
+Description: Enjoy powerful sound, voice control, and smart
+features in a compact design.
+
+Now generate a product description for a Smart Fitness Watch.
+"""
+
+print("ZERO-SHOT:\n", generate(zero_shot))
+print("\nONE-SHOT:\n", generate(one_shot))
+print("\nFEW-SHOT:\n", generate(few_shot))
+
